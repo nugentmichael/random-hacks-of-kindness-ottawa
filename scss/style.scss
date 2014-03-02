@@ -1,0 +1,76 @@
+/* -- Normalize -- */
+@import 'normalize';
+
+/* -- Mixins -- */
+@import 'mixins';
+
+$largest-breakpoint: 75em;
+
+/* -- Fonts -- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+$primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+* {
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+
+/* -- Font Styles -- */
+body { 
+	font-family: $secondary-font;
+}
+
+h2 {
+	font-family: $primary-font;
+	@include font-size(22);
+}
+
+h3 {
+	font-family: $primary-font;
+	@include font-size(14);
+}
+
+h4 {
+	font-family: $primary-font;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+h5 {
+	font-family: $secondary-font;
+	font-size: 16px;
+}
+
+h6 {
+	font-family: $primary-font;
+	font-weight: normal;
+	@include font-size(9);
+	margin-top: -30px;
+}
+
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:hover {
+	color: #0093cc;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+/* -- Navigation components -- */
+@import 'navigation';
+
+/* -- Layout Components -- */
+@import 'layout';

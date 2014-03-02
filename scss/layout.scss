@@ -1,0 +1,352 @@
+/* -- Layout Components -- */
+
+/* -- Main Container Divs -- */
+.container {
+	margin: 10px auto;
+	
+	@media (min-width: $largest-breakpoint) {
+		&:first-child { margin-top: 75px; }
+		width:40em;
+	}
+	
+	@media (min-width: 65em) {
+		width: 65em;
+	}
+
+	@media (max-width: 60em) {
+		&:first-child { margin-top: 110px; }
+		a { text-align: center; }
+	}
+
+	#logo {
+		margin: 2.5%;
+		width: 100px;
+		height: auto;
+	}
+
+	ul {
+		padding: 0;
+		margin:0;
+	}
+	
+	a {
+		display: block;
+		padding: 1em;
+		text-align:center;
+
+		img {
+			padding: 0;
+		}
+	}
+	
+	@media (min-width:60em) {
+		ul { @include clearfix; list-style-type: none; }
+		li { float:left; margin: 0.3em 1em }
+		li:first-child{ margin-left:0; }
+		a{ padding:0.5em 1em; text-align:left; float: left; }
+		a.menu-link { margin-top: -90px; }
+	}
+}
+
+/* -- Banner Components -- */
+.banner {
+	min-height: 360px;
+	margin: 6% auto 0;
+	padding: 0 2% 1%;
+	border-bottom: 1px solid #EBEBEB;
+	background-color: orange;
+	
+	@media (min-width: $largest-breakpoint) {
+		width:40em;
+	}
+	
+	@media (min-width: 60em) {
+		width: 60em;
+	}
+
+	@media (max-width: 60em) {
+		h2 { clear: both; padding-top: 3%; margin: 0 2% 0 2%; }
+	}
+
+	img {
+		float: left;
+		max-width: 100%;
+		height: auto;
+		padding-right: 2%;
+	}
+}
+
+/* -- Clearfix Include for column containers -- */
+.col-container{
+	@include clearfix;
+}
+
+/* -- Column Layout -- */
+.col{
+	margin-top:1em;
+	padding-top:1em;
+	min-height:200px;
+	&:first-child { margin-top:0; padding-top:0; border:none; }
+	
+	@media (min-width: $largest-breakpoint){
+		float:left;	
+		margin-top:0;
+		padding-top:0;
+		border:none;
+	}
+}
+
+/* -- Two Column Layout -- */
+.col-2 {
+	background-color: orange;
+	padding: 10px;
+	min-height: 0;
+
+	h4 {
+		color: #333;
+	}
+
+	h6 {
+		color: #333;
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	a {
+		padding: 1em;
+
+		img {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 60em) {
+
+		float: left;
+		width: 100%;
+
+		 h3 {
+			text-align: left;
+			// margin-left: -15px;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: auto;
+		}
+	}
+
+	@media (min-width: $largest-breakpoint) {
+		width: 46.75%;
+		margin-left: 2.5%;
+		&:first-child { margin-left: 0; }
+		img { float: left; width: 40%; margin-right: 2.5%; }
+		a:link { float: left; width: 55%; margin: -15px 0 0; padding: 0; }
+		h6 { float: left; margin-top: 1%; }
+	}
+}
+
+/* -- Three Column Layout -- */
+.col-3 {
+	background-color: blue;
+	
+	@media (min-width:$largest-breakpoint){
+		width:32%;
+		margin-left:2%;
+		&:first-child{ margin-left:0; }
+	}
+
+	@media (min-width: 60em) {
+		h3 { text-align: center; }
+	}
+
+	@media (min-width: 40em) {
+		a {
+		padding: 0.5em 1em;
+		text-align: center;
+		float: none;
+		}
+
+		h3 {
+			text-align: center;
+			margin-top: -5px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	#quote {
+		color: #444;
+		@include font-size(9);
+		margin: -20px 2% 0 2%;
+	}
+}
+
+/* -- Footer Container -- */
+.footer {
+
+		background-color: #D6D6D6;
+		border-right: 1px solid #CACACA;
+		color: #606060;
+		height: 278px;
+
+		&:nth-child(odd) {
+			width: 39.86%;
+			border-right: 1px solid #CACACA;
+			margin: 50px 0 0;
+		}
+
+		&:nth-child(even) {
+			width: 20%;
+			margin: 50px 0 0;
+		}
+
+		&:first-child {
+			h5 {
+				margin-left: 15%;
+			}
+
+			p {
+				margin-left: 15%;
+				width: 48.5%;
+			}
+		}
+
+		h5 {
+			margin-left: 5%;
+		}
+
+		p {
+			margin-left: 5%;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+
+		img {
+			float: right;
+			margin-top: -132px;
+		}
+
+		/* -- Download Column -- */
+		#download {
+			margin-left: 15%;
+			padding: 10px;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			background-color: #FFF;
+			border: none;
+			outline: none;
+			font-size: 14px;
+
+			&:hover {
+				color: #0093CC;
+			}
+		}
+
+		/* -- E-Mail Column -- */
+		#email {
+			margin: 0 17%;
+			padding: 10px;
+			border-radius: 5px 0 0 5px;
+			-webkit-border-radius: 5px 0 0 5px;
+			-moz-border-radius: 5px 0 0 5px;
+			background-color: #FFF;
+			border: none;
+			outline: none;
+			font-size: 14px;
+		}
+
+		/* -- Enter Button -- */
+		#enter {
+			margin-left: -50px;
+			padding: 10px;
+			border-radius: 0px 5px 5px 0px;
+			-webkit-border-radius: 0px 5px 5px 0px;
+			-moz-border-radius: 0px 5px 5px 0px;
+			background-color: #EEE;
+			border: none;
+			outline: none;
+			font-size: 14px;
+
+			&:hover {
+				color: #0093CC;
+			}
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		li a img {
+			float: none;
+			margin: 10px 10px -10px -10px;
+		}
+
+		@media (max-width: 65em) {
+			width: 100%;
+			height: auto;
+
+			h5 {
+				padding-top: 5%;
+			}
+
+			#email {
+				width: 65%;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+			}
+
+			&:nth-child(odd) {
+				width: 100%;
+				border-right: 1px solid #CACACA;
+				margin: 0;
+
+				img {
+					margin-top: -130px;
+				}
+			}
+
+			&:nth-child(even) {
+				width: 100%;
+				margin: 0;
+			}
+
+			&:first-child {
+				margin: 0 !important;
+			}
+
+			ul {
+				padding-bottom: 20px;
+			}
+
+			li {
+				margin: 30px 10px 10px 10px;
+			}
+		}
+
+		@media (max-width: 40em) {
+
+			&:nth-child(odd) {
+				height: auto;
+
+				img {
+					display: none;
+				}
+
+				li a img {
+					display: inline-block;
+				}
+			}
+
+			&:nth-child(even) {
+				height: auto;
+			}
+		}
+}

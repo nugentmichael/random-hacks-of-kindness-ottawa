@@ -1,0 +1,147 @@
+/* -- Navigation components -- */
+.main-nav{
+	ul{ list-style-type: none; padding:0; margin:0; }
+	li{ margin-top:1em; }
+	a{ display:block; padding:1em; text-align:center; }
+	background-color: purple;
+	
+	@media (min-width:40em){
+		ul { @include clearfix; }
+		li { float:left; margin-left:1em; margin-top:0; }
+		li:first-child{ margin-left:0; }
+		a{ padding:0.5em 1em; text-align:left; }
+	}
+}
+
+#search {
+	float: right;
+	margin-top: 20px;
+	width: 60px;
+	height: 20px;
+	display: block;
+	background: transparent url('../images/search.png') center top no-repeat;
+}
+
+#search:hover {
+	cursor: pointer;
+	background-image: url('../images/search-hover.png');
+}
+
+.pattern {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(51,51,51,0.9);
+	font-family: $primary-font;
+	font-size: 14px;
+	box-shadow: 0px 2px 5px #DDD;
+	-webkit-box-shadow: 0px 2px 5px #DDD;
+	-moz-box-shadow: 0px 2px 5px #DDD;
+	margin-bottom: 1em;
+	overflow: hidden;
+
+	a {
+		&:link {
+			color: #EEE;
+		}
+
+		&:visited {
+			color: #EEE;
+		}
+
+		&:hover {
+			color: #DC4E23;
+		}
+
+		&:active {
+
+		}
+	}
+
+	img {
+		width: 3em;
+		height: auto;
+	}
+
+	@media (max-width: 60em) {
+		#search { position: absolute; top: 0.5em; right: 1em; }
+		li:hover { background-color: rgba(255,255,255,0.2); }
+		a:hover { color: #EEE; }
+	}
+}
+
+section { padding:1em; }
+
+a.menu-link {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	display:block;
+	padding:1em;
+
+	&:before {
+	content:'\2630';
+	color: #EEE;
+	font-size: 30px;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* Hide */
+nav[role=navigation] {
+	max-height:0;
+}
+
+/* Show */
+nav[role=navigation].active {
+	max-height:15em;
+}
+
+/* Vertical Menu */
+nav[role=navigation] {
+	// clear: both;
+	-webkit-transition: all 0.3s ease-out;  
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+nav[role=navigation] ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav[role=navigation] li a {
+	display: block;
+	padding: 0.8em;
+}
+
+/* Large Screen */
+@media screen and (min-width: 60em) {
+	a.menu-link {
+		display:none;
+	}
+	nav[role=navigation] {
+		max-height: none;
+		float: left;
+	}
+	nav[role=navigation] ul {
+		margin: 0.4em 2em 0;
+		border: 0;
+	}
+
+/* Horizontal Navigation */	
+	nav[role=navigation]  li {
+		display: inline-block;
+		margin: 0.3em 1em;
+	}
+	nav[role=navigation] li a {
+		border: 0;
+	}
+}

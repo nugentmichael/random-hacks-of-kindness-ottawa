@@ -1,0 +1,84 @@
+/*
+Syntax error: Undefined mixin 'clearfix'.
+        on line 9 of scss/navigation.scss, in `clearfix'
+        from line 9 of scss/navigation.scss
+
+4: 	li{ margin-top:1em; }
+5: 	a{ display:block; padding:1em; text-align:center; }
+6: 	background-color: purple;
+7: 	
+8: 	@media (min-width:40em){
+9: 		ul { @include clearfix; }
+10: 		li { float:left; margin-left:1em; margin-top:0; }
+11: 		li:first-child{ margin-left:0; }
+12: 		a{ padding:0.5em 1em; text-align:left; }
+13: 	}
+14: }
+
+Backtrace:
+scss/navigation.scss:9:in `clearfix'
+scss/navigation.scss:9
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:362:in `visit_media'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 9 of scss/navigation.scss, in `clearfix'\A         from line 9 of scss/navigation.scss\A \A 4: 	li{ margin-top:1em; }\A 5: 	a{ display:block; padding:1em; text-align:center; }\A 6: 	background-color: purple;\A 7: 	\A 8: 	@media (min-width:40em){\A 9: 		ul { @include clearfix; }\A 10: 		li { float:left; margin-left:1em; margin-top:0; }\A 11: 		li:first-child{ margin-left:0; }\A 12: 		a{ padding:0.5em 1em; text-align:left; }\A 13: 	}\A 14: }"; }
