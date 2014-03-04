@@ -50,11 +50,9 @@
 
 /* -- Banner Components -- */
 .banner {
-	min-height: 360px;
 	margin: 6% auto 0;
 	padding: 0 2% 1%;
 	border-bottom: 1px solid #EBEBEB;
-	background-color: orange;
 	
 	@media (min-width: $largest-breakpoint) {
 		width:40em;
