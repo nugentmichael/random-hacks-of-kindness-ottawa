@@ -1,0 +1,32 @@
+[
+	{
+	    "title" : "Amnesty International Canada", 
+	    "description" : "Amnesty International is a global movement of over 4.6 million people committed to defending those who are denied justice or freedom. Project details Petitions are a great tactic, but there's some crucial functionality - and fun - lost in the switch from paper to digital. The Petition App will help activists search existing e-petitions, create new petitions, collect signatures, and submit petitions to Amnesty International (which delivers the petition).",
+	    "url" : "http://www.amnesty.ca/",
+	    "imageUrl" : "images/logo-amnesty.gif"
+	},
+	{
+	    "title" : "The Otesha Project", 
+	    "description" : "The Otesha Project is a national youth-led charitable organization that uses experiential learning, theatre and bicycle tours to engage and empower Canadians of all ages to take action for a more equitable and sustainable world. Project details To develop a mobile application that can engage the community while cleverly spreading our message of global equality. The theme of the game and the visuals will be about the Otesha bike tours. The game would be a puzzle game, similar to Bejeweled. Instead of matching jewels, the user matches 3 or 4 identical icons or symbols that are related to the chapters of the Otesha book. Each icon category would be a symbol that represents a chapter in the Otesha book.",
+	    "url" : "http://www.otesha.ca/",
+	    "imageUrl" : "images/logo-the-otesha-project.jpg"
+	},
+	{
+	    "title" : "Learning for a Sustainable Future", 
+	    "description" : "Learning for a Sustainable Future is transforming Canada’s education system through innovative programs that empower youth and educators to create more sustainable communities. Some LSF programs include: Resources for Rethinking, Our Canada Project and Step Outside. Project details The objectives are to enhance the tools teachers have to use inquiry-based learning with their students and to spark a whole host of other learning opportunities, from problem solving/research to action learning. The app would enable students to record what they are seeing in nature and their community, and what questions they have as a result.",
+	    "url" : "http://www.lsf-lst.ca/",
+	    "imageUrl" : "images/logo-lsf.png"
+	},
+	{
+	    "title" : "Ladies Learning Code", 
+	    "description" : "Ladies Learning Code is a women-run not-for-profit group working to empower everyone to feel comfortable learning beginner-friendly technical skills in a social, collaborative way. Project details To build a job board that helps connect workshop learners and the technology community with great talent. The job board will have three pages: main, administration page and a job seeker's area. Some of the key tasks and functionality required are to: search jobs, browse jobs by date, browse by category or by employer, and to include the most recent jobs listed on the front page.",
+	    "url" : "http://www.ladieslearningcode.com/",
+	    "imageUrl" : "images/logo-ladies-learning-code.png"
+	},
+	{
+	    "title" : "The North-South Institute’s Canadian International Development Platform", 
+	    "description" : "The North-South Institute (NSI) is Canada's leading international development think tank. The Canadian International Development Platform (CIDP) is an interactive data and analytics platform on Canada’s engagement with the developing world. CIDP leverages open data for development impact. Project details Open data in the international development sector is growing by leaps and bounds. However, to make sense of this data and the possibilities it offers it needs to be made available to a broader community of users in engaging ways. We have seen that the real game-changer is when we join disparate data streams in new and interesting ways. This project will focus on building a new website and visualization of Canada’s foreign aid projects and initiatives around the world. It will build a visual layer on top of our new API that links to a vast array of data sources (including data from the International Aid Transparency Initiative). Linking through the API will ensure access to “real-time” data, which will not only improve transparency and accountability to Canadian taxpayers who fund these initiatives; it will also shed more light on these for our partners in developing countries.",
+	    "url" : "http://www.nsi-ins.ca/",
+	   	"imageUrl" : "images/logo-nsi.png"
+	}
+]

@@ -74,6 +74,7 @@
 		padding: 22px 40px;
 		background-color: #DC4E23;
 		color: #fff;
+		border: 2px solid #DC4E23;
 		text-align: center;
 		font-size: 18px;
 		-webkit-border-radius: 2px;
@@ -146,6 +147,52 @@
 		margin-top:0;
 		padding-top:0;
 		border:none;
+	}
+}
+
+/* -- One Column Layout -- */
+.col-1 {
+	div {
+		min-height: 20em;
+		width: 100%;
+
+		h1 {
+			float: left;
+			width: 18em;
+		}
+
+		a img {
+			float: left;
+		}
+
+		p {
+			float: left;
+			width: 38em;
+		}
+	}
+
+	@media (max-width: 60em) {
+		float: left;
+		width: 100%;
+
+		img {
+			float: none !important;
+			display: block;
+			margin: auto;
+			max-width: 100%;	
+		}
+
+		h1 {
+			text-align: center;
+			width: auto !important;
+			float: none !important;
+		}
+
+		p {
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+		}
 	}
 }
 
