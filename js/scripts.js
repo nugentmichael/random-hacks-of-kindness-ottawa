@@ -82,6 +82,14 @@ $(document).ready(function() {
           var projectDescription = document.createElement('p');
           projectDescription.innerHTML = jsonObj[key].description;
 
+          // Project Details Header
+          var detailsHeader = document.createElement('h3');
+          detailsHeader.innerHTML = 'Project Details';
+
+          // Project Details
+          var projectDetails = document.createElement('p');
+          projectDetails.innerHTML = jsonObj[key].details;
+
           // Article Image
           // var articleImage = document.createElement('img');
           // var articleURL = document.createElement('a');
@@ -96,14 +104,59 @@ $(document).ready(function() {
           newDiv.appendChild(imageLink);
           newDiv.appendChild(projectHeading);
           newDiv.appendChild(projectDescription);
+          newDiv.appendChild(detailsHeader);
+          newDiv.appendChild(projectDetails);
           projectWrapper.appendChild(newDiv);
         }
       }
 
    }
+
    http_request.open("GET", data_file, true);
    http_request.send();
 }
 
-loadJSON();
+  loadJSON();
+
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(45.429265, -75.690050);
+    var mapOptions = {
+      zoom: 15,
+      center: myLatlng
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Shopify</h1>'+
+        '<div id="bodyContent">'+
+        '<p><b>Shopify</b> is located in the downtown-core of the nation\'s ' +
+        'capital, Ottawa, Ontario. The Random Hacks of Kindness event is held. ' + 
+        'on the second-floor of the building, located by the stairs. You will ' +
+        'find a greeter waiting for you to help you get registered for the ' +
+        'weekend long event!</p>' +
+        '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Uluru (Ayers Rock)'
+    });
+    
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+
+    infowindow.open(map,marker);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
 });
