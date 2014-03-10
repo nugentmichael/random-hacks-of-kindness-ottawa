@@ -1,0 +1,445 @@
+/* -- Layout Components -- */
+
+/* -- Main Container Divs -- */
+.container {
+	margin: 10px auto;
+	
+	@media (min-width: $largest-breakpoint) {
+		&:first-child { margin-top: 75px; }
+		width:40em;
+	}
+	
+	@media (min-width: 65em) {
+		width: 65em;
+	}
+
+	@media (max-width: 60em) {
+		&:first-child { margin-top: 110px; }
+		a { text-align: center; }
+	}
+
+	#logo {
+		margin: 2.5%;
+		width: 100px;
+		height: auto;
+	}
+
+	ul {
+		padding: 0;
+		margin:0;
+	}
+	
+	a {
+		display: block;
+		padding: 1em;
+		text-align:center;
+
+		img {
+			padding: 0;
+		}
+	}
+	
+	@media (min-width:60em) {
+		ul { @include clearfix; list-style-type: none; }
+		li { float:left; margin: 0.3em 1em }
+		li:first-child{ margin-left:0; }
+		a{ padding:0.5em 1em; text-align:left; float: left; }
+		a.menu-link { margin-top: -90px; }
+	}
+}
+
+/* -- Banner Components -- */
+.banner {
+	@include clearfix;
+
+	margin: 6% auto 0;
+	padding: 0 2% 1%;
+	border-bottom: 1px solid #EBEBEB;
+
+	img {
+		float: left;
+		max-width: 100%;
+		height: auto;
+		padding-right: 2%;
+	}
+
+	#bannerLogo {
+		max-width: 12em;
+		height: auto;
+	}
+
+	#eventbrite {
+		float: right;
+		width: 195px;
+		margin-right: 5em;
+		text-align: center;
+	}
+
+	#map-canvas {
+		clear: both;
+        height: 20em;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+
+	@media (min-width: $largest-breakpoint) {
+		width:40em;
+	}
+	
+	@media (min-width: 60em) {
+		width: 60em;
+	}
+
+	@media (max-width: 60em) {
+
+		#bannerLogo {
+			float: none;
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		#eventbrite {
+			float: none;
+			display: block;
+			margin: auto;
+		}
+	}
+}
+
+/* -- Clearfix Include for column containers -- */
+.col-container{
+	@include clearfix;
+}
+
+/* -- Column Layout -- */
+.col{
+	margin-top:1em;
+	padding-top:1em;
+	min-height:200px;
+	&:first-child { margin-top:0; padding-top:0; border:none; }
+	
+	@media (min-width: $largest-breakpoint){
+		float:left;	
+		margin-top:0;
+		padding-top:0;
+		border:none;
+	}
+}
+
+/* -- Calling Div --*/
+#calling {
+	border-bottom: 1px solid #EBEBEB;
+
+	img {
+		float: left;
+	}
+
+	h1 {
+		margin: 0;
+
+		+ p {
+			padding: 0 0 1em;
+		}
+	}
+
+	h3 {
+		float: left;
+		padding-left: 1em;
+		margin-bottom: 0;
+		width: 23em;
+	}
+
+	p {
+		float: left;
+		padding-left: 1.4em;
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 60em) {
+		float: left;
+		width: 100%;
+
+		img {
+			float: none !important;
+			display: block;
+			margin: auto;
+			max-width: 100%;	
+		}
+
+		h1 {
+			text-align: center;
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+
+			+ p {
+				padding: 1em;
+			}
+		}
+
+		h3 {
+			float: none !important;
+			display: block;
+			padding-left: 0.7em;
+			width: auto;
+
+			&:nth-child(odd) {
+				margin-top: -1em;
+			}
+		}
+
+		p {
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+			width: auto;
+		}
+	}
+}
+
+#events {
+	font-size: 18px;
+	line-height: 30px;
+	width: 100%;
+
+	div {
+		padding: 1em 0;
+
+		span {
+			font-family: $primary-font;
+			font-weight: bold; 
+			
+			&:first-child {
+				border-bottom: 1px solid #EBEBEB;
+			}
+		}
+	}
+
+	@media (max-width: 60em) {
+		h3 {
+			text-align: center;
+		}
+
+		span {
+			margin-left: 1em;
+		}
+	}
+}
+
+#sponsors {
+	a {
+		border: 10px solid #FFF;
+		padding: 1em;
+		max-width: 20em;
+		height: 10em;
+
+		&:hover {
+			border: 10px solid #DDD;
+		}
+
+		img {
+			margin: auto;
+		}
+	}
+
+	p {
+		clear: both;
+	}
+
+	a[href^="mailto"] {
+			float: none;
+			padding: 0;
+			display: inline;
+	}
+
+	@media (max-width: 60em) {
+		a {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+			border: none;
+
+			&:hover {
+				border: none;
+			}
+		}
+	}
+}
+
+/* -- One Column Layout -- */
+.col-1 {
+
+	p {
+		a {
+			float: none;
+			padding: 0;
+			display: inline;
+		}	
+	}
+
+	div {
+		@include clearfix;
+		width: 100%;
+		margin: 2em 0;
+		border-bottom: 1px solid #EBEBEB;
+
+		h1 {
+			float: left;
+			width: 18em;
+
+			+ p {
+				float: left;
+				width: 38em;
+				margin: -0.5em 0;
+			}
+		}
+
+		a {
+			img {
+				float: left;
+			}
+		}
+
+		h3 {
+			clear: both;
+			float: left;
+			margin: 1em 0 0;
+
+			+ p {
+				float: left;
+				padding-bottom: 1em;
+			}
+		}
+	}
+
+	@media (max-width: 60em) {
+		float: left;
+		width: 100%;
+
+		div {
+			margin-bottom: 0;
+		}
+
+		img {
+			float: none !important;
+			display: block;
+			margin: auto;
+			max-width: 100%;	
+		}
+
+		h1 {
+			text-align: center;
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+		}
+
+		h3 {
+			float: none !important;
+			display: block;
+			padding-left: 0.7em;
+		}
+
+		p {
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+		}
+	}
+}
+
+/* -- Two Column Layout -- */
+.col-2 {
+	background-color: orange;
+	padding: 10px;
+	min-height: 0;
+
+	h4 {
+		color: #333;
+	}
+
+	h6 {
+		color: #333;
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	a {
+		padding: 1em;
+
+		img {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 60em) {
+
+		float: left;
+		width: 100%;
+
+		 h3 {
+			text-align: left;
+			// margin-left: -15px;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: auto;
+		}
+	}
+
+	@media (min-width: $largest-breakpoint) {
+		width: 46.75%;
+		margin-left: 2.5%;
+		&:first-child { margin-left: 0; }
+		img { float: left; width: 40%; margin-right: 2.5%; }
+		a:link { float: left; width: 55%; margin: -15px 0 0; padding: 0; }
+		h6 { float: left; margin-top: 1%; }
+	}
+}
+
+/* -- Three Column Layout -- */
+.col-3 {
+	background-color: blue;
+	
+	@media (min-width:$largest-breakpoint){
+		width:32%;
+		margin-left:2%;
+		&:first-child{ margin-left:0; }
+	}
+
+	@media (min-width: 60em) {
+		h3 { text-align: center; }
+	}
+
+	@media (min-width: 40em) {
+		a {
+		padding: 0.5em 1em;
+		text-align: center;
+		float: none;
+		}
+
+		h3 {
+			text-align: center;
+			margin-top: -5px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+/* -- Footer Container -- */
+.footer {
+
+}

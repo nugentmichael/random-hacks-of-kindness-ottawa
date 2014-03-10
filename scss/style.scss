@@ -1,0 +1,110 @@
+/* -- Normalize -- */
+@import 'normalize';
+
+/* -- Mixins -- */
+@import 'mixins';
+
+$largest-breakpoint: 75em;
+
+/* -- Fonts -- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+$primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+* {
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+}
+
+/* -- Font Styles -- */
+body { 
+	font-family: $secondary-font;
+}
+
+h1 {
+	font-family: $primary-font;
+}
+
+h2 {
+	font-family: $primary-font;
+	@include font-size(22);
+}
+
+h3 {
+	font-family: $primary-font;
+	@include font-size(14);
+	font-weight: normal;
+}
+
+h4 {
+	font-family: $primary-font;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+h5 {
+	font-family: $secondary-font;
+	font-size: 16px;
+}
+
+h6 {
+	font-family: $primary-font;
+	font-weight: normal;
+	@include font-size(9);
+	margin-top: -30px;
+}
+
+a:link {
+	color: #0093CC;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:hover {
+	color: #333;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.signup-btn {
+		float: left;
+		margin: 5em;
+		padding: 22px 40px !important;
+		background-color: #DC4E23;
+		color: #fff !important;
+		border: 2px solid #DC4E23;
+		text-align: center;
+		font-size: 18px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+
+		&:hover {
+			background-color: #FFF;
+			color: #DC4E23 !important;
+			border: 2px solid #DC4E23;
+		}
+}
+
+/* -- Navigation components -- */
+@import 'navigation';
+
+/* -- Layout Components -- */
+@import 'layout';
+
+@media (max-width: 60em) {
+
+	.signup-btn {
+		float: none;
+		display: block;
+		margin: 1em auto;
+	}
+}
