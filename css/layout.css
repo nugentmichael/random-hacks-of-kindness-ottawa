@@ -57,9 +57,10 @@ scss/layout.scss:7
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
 /Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/mike/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
 body:before {
   white-space: pre;

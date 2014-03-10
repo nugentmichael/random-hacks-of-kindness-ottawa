@@ -147,7 +147,7 @@ $(document).ready(function() {
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Uluru (Ayers Rock)'
+        title: 'Shopify Ottawa'
     });
     
     google.maps.event.addListener(marker, 'click', function() {

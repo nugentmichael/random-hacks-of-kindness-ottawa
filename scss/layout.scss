@@ -68,26 +68,6 @@
 		height: auto;
 	}
 
-	.signup-btn {
-		float: left;
-		margin: 5em;
-		padding: 22px 40px;
-		background-color: #DC4E23;
-		color: #fff;
-		border: 2px solid #DC4E23;
-		text-align: center;
-		font-size: 18px;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
-
-		&:hover {
-			background-color: #FFF;
-			color: #DC4E23;
-			border: 2px solid #DC4E23;
-		}
-	}
-
 	#eventbrite {
 		float: right;
 		width: 195px;
@@ -124,12 +104,6 @@
 			text-align: center;
 		}
 
-		.signup-btn {
-			float: none;
-			display: block;
-			margin: 1em auto;
-		}
-
 		#eventbrite {
 			float: none;
 			display: block;
@@ -155,6 +129,146 @@
 		margin-top:0;
 		padding-top:0;
 		border:none;
+	}
+}
+
+/* -- Calling Div --*/
+#calling {
+	border-bottom: 1px solid #EBEBEB;
+
+	img {
+		float: left;
+	}
+
+	h1 {
+		margin: 0;
+
+		+ p {
+			padding: 0 0 1em;
+		}
+	}
+
+	h3 {
+		float: left;
+		padding-left: 1em;
+		margin-bottom: 0;
+		width: 23em;
+	}
+
+	p {
+		float: left;
+		padding-left: 1.4em;
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 60em) {
+		float: left;
+		width: 100%;
+
+		img {
+			float: none !important;
+			display: block;
+			margin: auto;
+			max-width: 100%;	
+		}
+
+		h1 {
+			text-align: center;
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+
+			+ p {
+				padding: 1em;
+			}
+		}
+
+		h3 {
+			float: none !important;
+			display: block;
+			padding-left: 0.7em;
+			width: auto;
+
+			&:nth-child(odd) {
+				margin-top: -1em;
+			}
+		}
+
+		p {
+			width: auto !important;
+			float: none !important;
+			padding: 1em;
+			width: auto;
+		}
+	}
+}
+
+#events {
+	font-size: 18px;
+	line-height: 30px;
+	width: 100%;
+
+	div {
+		padding: 1em 0;
+
+		span {
+			font-family: $primary-font;
+			font-weight: bold; 
+			
+			&:first-child {
+				border-bottom: 1px solid #EBEBEB;
+			}
+		}
+	}
+
+	@media (max-width: 60em) {
+		h3 {
+			text-align: center;
+		}
+
+		span {
+			margin-left: 1em;
+		}
+	}
+}
+
+#sponsors {
+	a {
+		border: 10px solid #FFF;
+		padding: 1em;
+		max-width: 20em;
+		height: 10em;
+
+		&:hover {
+			border: 10px solid #DDD;
+		}
+
+		img {
+			margin: auto;
+		}
+	}
+
+	p {
+		clear: both;
+	}
+
+	a[href^="mailto"] {
+			float: none;
+			padding: 0;
+			display: inline;
+	}
+
+	@media (max-width: 60em) {
+		a {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+			border: none;
+
+			&:hover {
+				border: none;
+			}
+		}
 	}
 }
 
